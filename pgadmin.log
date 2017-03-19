@@ -1,0 +1,1161 @@
+2017-03-12 20:11:26 ERROR  : ERROR:  new collation (English_United States.1252) is incompatible with the collation of the template database (Portuguese_Brazil.1252)
+HINT:  Use the same collation as in the template database, or use template0 as template.
+2017-03-12 20:13:34 ERROR  : ERROR:  schema "DM" does not exist
+LINE 2: CREATE TABLE "DM"."FTO_FAROLWMS"
+                     ^
+2017-03-12 20:14:16 ERROR  : ERROR:  schema "STG" does not exist
+2017-03-12 20:14:38 ERROR  : ERROR:  schema "ODS" already exists
+2017-03-12 20:14:38 ERROR  : ERROR:  schema "ODS" already exists
+2017-03-12 20:26:35 ERROR  : ERROR:  new collation (English_United States.1252) is incompatible with the collation of the template database (Portuguese_Brazil.1252)
+HINT:  Use the same collation as in the template database, or use template0 as template.
+2017-03-12 20:32:29 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-12 21:32:42 ERROR  : ERROR:  syntax error at or near "DATABASE"
+LINE 1: GRANT ALL DATABASE TO usersup;
+                  ^
+2017-03-12 21:32:49 ERROR  : ERROR:  syntax error at or near "DATABASE"
+LINE 1: GRANT ALL DATABASE "WMS_BI" TO usersup;
+                  ^
+2017-03-12 21:50:30 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-12 22:05:32 ERROR  : ERROR:  schema "usersup" does not exist
+2017-03-12 22:07:03 ERROR  : ERROR:  syntax error at or near "ON"
+LINE 2: ON ALL TABLES IN SCHEMA "STG"
+        ^
+2017-03-12 22:07:08 ERROR  : ERROR:  syntax error at or near "ON"
+LINE 2: GRANT ON ALL TABLES IN SCHEMA "STG"
+              ^
+2017-03-12 22:07:32 ERROR  : ERROR:  role "some_role" does not exist
+2017-03-12 22:17:18 ERROR  : ERROR:  syntax error at or near "postgres"
+LINE 1: postgres
+        ^
+2017-03-12 22:20:55 ERROR  : ERROR:  relation "public.ODS_PROMAX2ART" does not exist
+LINE 15:    FROM public."ODS_PROMAX2ART" art
+                 ^
+2017-03-12 22:21:13 ERROR  : ERROR:  syntax error at or near "stg_codunb"
+LINE 2:   stg_codunb character varying(250),
+          ^
+2017-03-12 22:21:16 ERROR  : ERROR:  syntax error at or near "stg_codunb"
+LINE 2:   stg_codunb character varying(250),
+          ^
+2017-03-12 22:21:24 ERROR  : ERROR:  relation "STG_PROMAX2ART" already exists
+2017-03-12 22:21:26 ERROR  : ERROR:  relation "STG_PROMAX2ART" already exists
+2017-03-12 22:21:33 ERROR  : ERROR:  role "consultwms" does not exist
+2017-03-12 22:21:35 ERROR  : ERROR:  role "consultwms" does not exist
+2017-03-12 22:21:53 ERROR  : ERROR:  relation "public.base2art" does not exist
+LINE 10:    FROM public.base2art carregados
+                 ^
+2017-03-12 22:21:55 ERROR  : ERROR:  relation "public.base2art" does not exist
+LINE 10:    FROM public.base2art carregados
+                 ^
+2017-03-12 22:22:12 ERROR  : ERROR:  relation "public.previsto" does not exist
+LINE 14:    FROM public.previsto previsto
+                 ^
+2017-03-12 22:22:14 ERROR  : ERROR:  relation "public.previsto" does not exist
+LINE 14:    FROM public.previsto previsto
+                 ^
+2017-03-12 22:22:39 ERROR  : ERROR:  relation "public.DIM_GEO" does not exist
+LINE 1: SELECT * FROM public."DIM_GEO"
+                      ^
+2017-03-12 22:33:05 ERROR  : ERROR:  relation "STG_MAPASCARREGADOS" already exists
+2017-03-12 22:35:33 ERROR  : ERROR:  cannot drop table "ODS_PROMAX2ART" because other objects depend on it
+DETAIL:  view base2art depends on table "ODS_PROMAX2ART"
+view carregado depends on view base2art
+view previsto depends on view base2art
+view consolidadocarregamento depends on view previsto
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-12 22:35:41 ERROR  : ERROR:  relation "ODS_PROMAX2ART" already exists
+2017-03-12 22:50:40 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 2: WHERE "MAPA" = 521924;
+                     ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-12 23:29:54 ERROR  : ERROR:  syntax error at end of input
+LINE 642: 544577)
+                 ^
+2017-03-12 23:30:00 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 2: WHERE "stg_mapa" IN (543185,
+                         ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-12 23:31:03 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-12 23:32:27 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 2: WHERE "NRMAPA" IN (
+                       ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-13 09:36:09 ERROR  : ERROR:  relation "ODS_2ART" already exists
+2017-03-13 09:40:57 ERROR  : ERROR:  syntax error at or near ","
+LINE 5: ,543185,
+        ^
+2017-03-13 09:45:03 ERROR  : ERROR:  syntax error at or near ","
+LINE 2: WHERE "stg_mapa" IN (,543185,
+                             ^
+2017-03-13 09:45:06 ERROR  : ERROR:  syntax error at end of input
+LINE 531: 
+          ^
+2017-03-13 09:45:09 ERROR  : ERROR:  syntax error at end of input
+LINE 531: 
+          ^
+2017-03-13 09:45:21 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 2: WHERE "stg_mapa" IN (543185,
+                         ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-13 10:07:23 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 2: WHERE CAST("stg_mapa" AS INTEGER) IN (543185,
+        ^
+2017-03-13 11:40:45 ERROR  : can't open file 'C:\Users\Marvila.DESKTOP-CMRHIM7\Desktop\relacao.csv' (error 32: o arquivo já está sendo usado por outro processo.)
+2017-03-13 11:42:35 ERROR  : Failed to open file C:\Users\Marvila.DESKTOP-CMRHIM7\Desktop\relacao.csv.
+2017-03-13 13:32:27 ERROR  : ERROR:  syntax error at or near "tempo"
+LINE 8: tempo."SK_TEMPO",
+        ^
+2017-03-13 13:32:37 ERROR  : ERROR:  function pg_catalog.btrim(smallint, unknown) does not exist
+LINE 4: ...TO_CHAR("ODS_DATA",'YYYY-MM-DD'),1,4)||'_'|| LPAD(TRIM(both ...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-13 13:33:41 ERROR  : ERROR:  syntax error at or near "varying"
+LINE 4: ...h ' ' from CAST(art2."ODS_CODFILIAL" AS chatacrer varying (5...
+                                                             ^
+2017-03-13 13:33:50 ERROR  : ERROR:  function pg_catalog.btrim(integer, unknown) does not exist
+LINE 4: ...L" AS character varying (50))),4,'0')||'_'|| LPAD(TRIM(both ...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-13 13:38:45 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 37:  SELECT *  FROM "ODS"."ODS_2ART" LIMIT 100;
+          ^
+2017-03-13 13:49:29 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 40: AND "DM"."FTO_FAROLWMS"."CHAVE" = carregamento."CHAVE"
+         ^
+2017-03-13 13:49:38 ERROR  : ERROR:  syntax error at or near "END"
+LINE 41: END IF;
+         ^
+2017-03-13 13:57:44 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 532: SELECT * FROM "DM"."FTO_FAROLWMS"
+          ^
+2017-03-13 14:01:47 ERROR  : ERROR:  syntax error at or near "("
+LINE 3: (
+        ^
+2017-03-13 14:08:21 ERROR  : ERROR:  syntax error at or near "("
+LINE 535: (
+          ^
+2017-03-13 14:09:40 ERROR  : ERROR:  syntax error at or near "*"
+LINE 1: * FROM "STG"."STG_2ART" LIMIT 10
+        ^
+2017-03-13 14:10:33 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 2: WHERE "STG_MAPA" IN (544610,
+        ^
+2017-03-13 14:10:42 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 2: WHERE "STG_MAPA" IN (544610,
+                         ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-13 14:15:00 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-13 14:15:15 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 2: WHERE CAST("STG_MAPA" AS INTEGER) IN (544610,
+        ^
+2017-03-13 14:16:29 ERROR  : ERROR:  syntax error at or near "("
+LINE 536: (
+          ^
+2017-03-13 14:47:37 ERROR  : ERROR:  relation "Carregamento" does not exist
+LINE 1: SELECT * FROM "Carregamento"
+                      ^
+2017-03-13 14:47:46 ERROR  : ERROR:  relation "Carregamento" does not exist
+LINE 1: SELECT * FROM "Carregamento"
+                      ^
+2017-03-13 14:48:02 ERROR  : ERROR:  column "stg_mapas" does not exist
+LINE 2: WHERE "stg_mapas" IN 
+              ^
+2017-03-13 14:48:38 ERROR  : ERROR:  column "MAPAS" does not exist
+LINE 2: WHERE CAST("MAPAS" AS INTEGER) IN 
+                   ^
+HINT:  Perhaps you meant to reference the column "base2art.MAPA".
+2017-03-13 15:46:03 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-13 15:52:35 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 2: WHERE CAST("STG_MAPA" AS INTEGER) IN (544610,
+        ^
+2017-03-13 16:30:04 ERROR  : ERROR:  table "DIM_PROJETOS" does not exist
+2017-03-13 16:31:55 ERROR  : ERROR:  table "DIM_PROJETOS" does not exist
+2017-03-13 16:31:59 ERROR  : ERROR:  syntax error at or near ")"
+LINE 12: )
+         ^
+2017-03-13 16:41:44 ERROR  : ERROR:  syntax error at or near "FOREIGN"
+LINE 4:   "LOG_SKPROJETO" FOREIGN KEY,
+                          ^
+2017-03-13 16:43:52 ERROR  : ERROR:  syntax error at or near "FOREIGN"
+LINE 6:   "LOG_SKPROJETO" INTEGER FOREIGN KEY ("LOG_SKPROJETO") REFE...
+                                  ^
+2017-03-13 16:43:58 ERROR  : ERROR:  syntax error at or near ""LOG_SKLOG""
+LINE 3:   "LOG_SKLOG" SERIAL,
+          ^
+2017-03-13 16:44:00 ERROR  : ERROR:  syntax error at or near "FOREIGN"
+LINE 6:   "LOG_SKPROJETO" FOREIGN KEY ("LOG_SKPROJETO") REFERENCES "...
+                          ^
+2017-03-13 16:44:06 ERROR  : ERROR:  syntax error at or near "FOREIGN"
+LINE 6:   "LOG_SKPROJETO" FOREIGN KEY INTEGER ("LOG_SKPROJETO") REFE...
+                          ^
+2017-03-13 16:48:20 ERROR  : ERROR:  schema "LOG" does not exist
+LINE 2: CREATE TABLE "LOG"."LOG_BIWMS"
+                     ^
+2017-03-13 16:49:45 ERROR  : ERROR:  relation "LOG_BIWMS" already exists
+2017-03-13 21:13:13 ERROR  : ERROR:  table "LOG_BIWMS" does not exist
+2017-03-13 21:14:53 ERROR  : ERROR:  relation "LOG_BIWMS" already exists
+2017-03-13 21:17:54 ERROR  : ERROR:  syntax error at or near ":"
+LINE 2: ... 'FAROL_CARREGAMENTO_ELTON', 'CARREGAMENTO', 1, 09:00, 'publ...
+                                                             ^
+2017-03-13 21:18:00 ERROR  : ERROR:  column "HABILITADO" is of type bit but expression is of type integer
+LINE 2: ...ila', 'FAROL_CARREGAMENTO_ELTON', 'CARREGAMENTO', 1, 09, 'pu...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+2017-03-13 21:18:04 ERROR  : ERROR:  column "HR_EXECUÇÃO" is of type time without time zone but expression is of type integer
+LINE 2: ... 'FAROL_CARREGAMENTO_ELTON', 'CARREGAMENTO', '1', 09, 'publi...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+2017-03-13 21:18:12 ERROR  : ERROR:  syntax error at or near ":"
+LINE 2: ...FAROL_CARREGAMENTO_ELTON', 'CARREGAMENTO', '1', 09:00, 'publ...
+                                                             ^
+2017-03-14 10:35:47 ERROR  : ERROR:  relation "DM.DIM_PROJETO" does not exist
+LINE 2:       SELECT * FROM "DM"."DIM_PROJETO";
+                            ^
+2017-03-14 10:59:40 ERROR  : ERROR:  syntax error at or near ""DATA""
+LINE 1: "DATA", "ARMAZÉM", "MAPA", "CÓDIGO UNB", "STATUS"
+        ^
+2017-03-14 11:02:54 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 31:     END LOOP;
+                     ^
+2017-03-14 11:02:58 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS");
+                                                    ^
+2017-03-14 11:03:04 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 31:     END LOOP;
+                     ^
+2017-03-14 11:03:22 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:03:59 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       TEXCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:04:01 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       TEXCAT(reg."MAPA", "-", reg."STATUS");
+                                                    ^
+2017-03-14 11:04:04 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:05:10 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 27:       reg."MAPA";
+                         ^
+2017-03-14 11:05:16 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 23:       reg."MAPA";
+                         ^
+2017-03-14 11:05:26 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 27:       reg."MAPA";
+                         ^
+2017-03-14 11:05:27 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 27:       reg."MAPA";
+                         ^
+2017-03-14 11:05:28 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 27:       reg."MAPA";
+                         ^
+2017-03-14 11:05:28 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 27:       reg."MAPA";
+                         ^
+2017-03-14 11:05:28 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 27:       reg."MAPA";
+                         ^
+2017-03-14 11:05:28 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 27:       reg."MAPA";
+                         ^
+2017-03-14 11:05:29 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 27:       reg."MAPA";
+                         ^
+2017-03-14 11:05:34 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:05:37 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS");
+                                                    ^
+2017-03-14 11:05:58 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS");
+                                                    ^
+2017-03-14 11:06:22 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS");
+                                                    ^
+2017-03-14 11:06:28 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:06:57 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28: ... CONCAT(reg."MAPA", "-", reg."STATUS") FROM public.base2art;
+                                                                       ^
+2017-03-14 11:07:03 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:07:04 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:07:04 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:07:10 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS");
+                                                    ^
+2017-03-14 11:07:13 ERROR  : ERROR:  missing "LOOP" at end of SQL expression
+LINE 28:       CONCAT(reg."MAPA", "-", reg."STATUS")));
+                                                      ^
+2017-03-14 11:07:55 ERROR  : ERROR:  missing "LOOP" at end of SQL expression
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS")));
+                                                      ^
+2017-03-14 11:07:56 ERROR  : ERROR:  missing "LOOP" at end of SQL expression
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS")));
+                                                      ^
+2017-03-14 11:08:03 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 15:       AND "LOG_SKPROJETO" = public.base2art."SK_PROJETO"))
+               ^
+2017-03-14 11:08:19 ERROR  : ERROR:  syntax error at or near ")"
+LINE 14: ...L" AS INTEGER) = CAST(public.base2art."CÓDIGO UNB") as INTEG...
+                                                              ^
+2017-03-14 11:08:36 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 19:       VALUES SELECT (1,  -- SK_PROJETO
+                      ^
+2017-03-14 11:08:41 ERROR  : ERROR:  syntax error at or near ")"
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS")));
+                                                     ^
+2017-03-14 11:12:13 ERROR  : ERROR:  syntax error at or near ","
+LINE 20: ...TO_CHAR(CAST(reg."DATA" AS character varying (100),'YYYY-MM-...
+                                                              ^
+2017-03-14 11:12:18 ERROR  : ERROR:  syntax error at or near ","
+LINE 20: ...TO_CHAR(CAST(reg."DATA" AS character varying (100),'YYYY-MM-...
+                                                              ^
+2017-03-14 11:12:22 ERROR  : ERROR:  syntax error at or near ","
+LINE 20: ...TO_CHAR(CAST(reg."DATA" AS character varying (100),'YYYY-MM-...
+                                                              ^
+2017-03-14 11:12:28 ERROR  : ERROR:  syntax error at end of input
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:12:33 ERROR  : ERROR:  syntax error at end of input
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS");
+                                                    ^
+2017-03-14 11:12:35 ERROR  : ERROR:  syntax error at end of input
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS")));
+                                                      ^
+2017-03-14 11:12:45 ERROR  : ERROR:  syntax error at end of input
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:13:36 ERROR  : ERROR:  missing "LOOP" at end of SQL expression
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS"))));
+                                                       ^
+2017-03-14 11:13:38 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS")));
+                                                      ^
+2017-03-14 11:13:40 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS"));
+                                                     ^
+2017-03-14 11:13:42 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS");
+                                                    ^
+2017-03-14 11:13:45 ERROR  : ERROR:  mismatched parentheses at or near ")"
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS"))))));
+                                                       ^
+2017-03-14 11:13:48 ERROR  : ERROR:  mismatched parentheses at or near ")"
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS")))));
+                                                       ^
+2017-03-14 11:13:50 ERROR  : ERROR:  missing "LOOP" at end of SQL expression
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS"))));
+                                                       ^
+2017-03-14 11:14:00 ERROR  : ERROR:  syntax error at or near "||"
+LINE 20: ...  SUBSTRING(TO_CHAR(reg."DATA"),'YYYY-MM-DD'),1,4)||'_'|| LP...
+                                                              ^
+2017-03-14 11:14:26 ERROR  : ERROR:  syntax error at or near ")"
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS"))));
+                                                     ^
+2017-03-14 11:14:29 ERROR  : ERROR:  syntax error at or near ")"
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STATUS")));
+                                                     ^
+2017-03-14 11:14:29 ERROR  : ERROR:  syntax error at or near ")"
+LINE 29:       CONCAT(reg."MAPA", "-", reg."STTUS")));
+                                                    ^
+2017-03-14 11:15:12 ERROR  : ERROR:  relation "DM.DIM_UNB" does not exist
+LINE 1: SELECT * FROM "DM"."DIM_UNB"
+                      ^
+2017-03-14 11:18:11 ERROR  : ERROR:  syntax error at or near ""QNTREGISTROS""
+LINE 11: ...AZÉM", "MAPA", "CÓDIGO UNB", "STATUS", COUNT(*) A "QNTREGIST...
+                                                              ^
+2017-03-14 11:18:17 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 17:   GROUP BY "SK_PROJETO", "DATA", DIMGEO."UK_GEO" AS "GEO", "...
+                                                          ^
+2017-03-14 11:18:21 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 17:   GROUP BY "SK_PROJETO", "DATA", DIMGEO."UK_GEO" AS "GEO", "...
+                                                          ^
+2017-03-14 11:20:41 ERROR  : ERROR:  syntax error at end of input
+LINE 31:       CONCAT(reg."MAPA", '-', reg."STATUS"));--));
+                                                     ^
+2017-03-14 11:26:05 ERROR  : ERROR:  syntax error at or near "||"
+LINE 22:       SUBSTRING(reg."DATA",'YYYY-MM-DD'),1,4)||'_'|| LPAD(TR...
+                                                      ^
+2017-03-14 11:28:31 ERROR  : ERROR:  function to_char(character varying, unknown) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING(TO_CHAR("DATA",'YYYY-MM-DD'),1,4)|...
+                                  ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 11:28:40 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: SELECT DISTINCT SUBSTRING("DATA",'YYYY-MM-DD'),1,4)||'_'|| 
+                                                          ^
+2017-03-14 11:28:46 ERROR  : ERROR:  function pg_catalog.substring(character varying, unknown, integer, integer) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING("DATA",'YYYY-MM-DD' ,1,4)||'_'|| 
+                        ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 11:29:38 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 3:     AS "CHAVE"  ,'1' AS "SK_PROJETO", CAST("DATA" AS charact...
+            ^
+2017-03-14 11:29:45 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 3:     AS "CHAVE"  ,'1' AS "SK_PROJETO", CAST("DATA" AS charact...
+            ^
+2017-03-14 11:29:58 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 3:     AS "CHAVE"  ,'1' AS "SK_PROJETO", CAST("DATA" AS charact...
+            ^
+2017-03-14 11:30:15 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 2: ...m CAST("MAPA" AS character varying (100))),6,'0') AS "CHAVE"...
+                                                             ^
+2017-03-14 11:30:26 ERROR  : ERROR:  syntax error at or near "LOOP"
+LINE 9: LOOP
+        ^
+2017-03-14 11:30:36 ERROR  : ERROR:  function pg_catalog.substring(character varying, unknown, integer, integer) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING(CAST("DATA" AS character varying (...
+                        ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 11:32:22 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 1: SELECT DISTINCT SELECT  SUBSTRING(TO_CHAR("DATA",'YYYY-MM-DD...
+                        ^
+2017-03-14 11:32:33 ERROR  : ERROR:  function to_char(character varying, unknown) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING(TO_CHAR("DATA",'YYYY-MM-DD'),1,4)|...
+                                  ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 11:33:40 ERROR  : ERROR:  function to_char(character varying, unknown) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING(TO_CHAR("DATA",'YYYY-MM-DD'),1,4)|...
+                                  ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 11:33:47 ERROR  : ERROR:  function to_char(character varying, unknown) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING(TO_CHAR("DATA",'YYYY-MM-DD'),1,4)|...
+                                  ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 11:34:06 ERROR  : ERROR:  function pg_catalog.substring(character varying, unknown, integer, integer) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING("DATA",'YYYY-MM-DD' ,1,4)||'_'|| L...
+                        ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 11:34:17 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: ...ELECT DISTINCT SUBSTRING("DATA",'YYYY-MM-DD' ,1,4))||'_'|| L...
+                                                             ^
+2017-03-14 11:34:30 ERROR  : ERROR:  missing FROM-clause entry for table "art2"
+LINE 1: ...("DATA", 1,4)||'_'|| LPAD(TRIM(both ' ' from CAST(art2."CÓDI...
+                                                             ^
+2017-03-14 11:35:15 ERROR  : ERROR:  missing FROM-clause entry for table "art2"
+LINE 1: ...("DATA", 1,4)||'_'|| LPAD(TRIM(both ' ' from CAST(art2."CÓDI...
+                                                             ^
+2017-03-14 11:37:07 ERROR  : ERROR:  function pg_catalog.date_part(unknown, character varying) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING(EXTRACT(YEAR FROM "DATA"), 1,4)||'...
+                                  ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 11:37:26 ERROR  : ERROR:  function pg_catalog.substring(double precision, integer, integer) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING(EXTRACT(YEAR FROM CAST("DATA" AS D...
+                        ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 11:37:51 ERROR  : ERROR:  syntax error at or near ")"
+LINE 31:       CONCAT(reg."MAPA", '-', reg."STATUS"))));
+                                                     ^
+2017-03-14 11:37:53 ERROR  : ERROR:  syntax error at or near ")"
+LINE 31:       CONCAT(reg."MAPA", '-', reg."STATUS")));
+                                                     ^
+2017-03-14 11:37:59 ERROR  : ERROR:  syntax error at or near ")"
+LINE 31:       CONCAT(reg."MAPA", '-', reg."STATUS"))));
+                                                     ^
+2017-03-14 11:38:01 ERROR  : ERROR:  syntax error at or near ")"
+LINE 31:       CONCAT(reg."MAPA", '-', reg."STATUS"))));
+                                                     ^
+2017-03-14 11:38:03 ERROR  : ERROR:  syntax error at or near ")"
+LINE 31:       CONCAT(reg."MAPA", '-', reg."STATUS"))))));
+                                                     ^
+2017-03-14 11:38:11 ERROR  : ERROR:  syntax error at or near ")"
+LINE 31:       CONCAT(reg."MAPA", '-', reg."STATUS"))));
+                                                     ^
+2017-03-14 11:38:19 ERROR  : ERROR:  missing "LOOP" at end of SQL expression
+LINE 17: ... DIMGEO."UK_GEO", "ARMAZÉM", "MAPA", "CÓDIGO UNB", "STATUS";
+                                                                       ^
+2017-03-14 11:38:21 ERROR  : ERROR:  syntax error at or near ")"
+LINE 31:       CONCAT(reg."MAPA", '-', reg."STATUS"))));
+                                                     ^
+2017-03-14 11:39:21 ERROR  : ERROR:  syntax error at or near ")"
+LINE 32:       CONCAT(reg."MAPA", '-', reg."STATUS"))));
+                                                     ^
+2017-03-14 11:39:52 ERROR  : ERROR:  syntax error at or near ")"
+LINE 32:       CONCAT(reg."MAPA", '-', reg."STATUS"))));
+                                                     ^
+2017-03-14 11:39:54 ERROR  : ERROR:  syntax error at or near ")"
+LINE 32:       CONCAT(reg."MAPA", '-', reg."STATUS"))))
+                                                     ^
+2017-03-14 11:40:20 ERROR  : ERROR:  syntax error at or near ")"
+LINE 32:       CONCAT(reg."MAPA", '-', reg."STATUS"))))
+                                                     ^
+2017-03-14 11:40:30 ERROR  : ERROR:  syntax error at or near ")"
+LINE 32:       CONCAT(reg."MAPA", '-', reg."STATUS"))));
+                                                     ^
+2017-03-14 11:40:32 ERROR  : ERROR:  syntax error at or near ")"
+LINE 32:       CONCAT(reg."MAPA", '-', reg."STATUS")));
+                                                     ^
+2017-03-14 12:21:15 ERROR  : ERROR:  invalid input syntax for integer: "CDD-Salvador"
+2017-03-14 12:21:49 ERROR  : ERROR:  column "dimgeo.DSC_GEO" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 2:     '1' AS "SK_PROJETO", "DATA", DIMGEO."DSC_GEO" AS "GEO", ...
+                                         ^
+2017-03-14 12:25:42 ERROR  : ERROR:  syntax error at or near "RUNCATE"
+LINE 1: RUNCATE TABLE "LOG"."LOG_BIWMS";
+        ^
+2017-03-14 12:25:46 ERROR  : ERROR:  syntax error at or near "1"
+LINE 1: ... DISTINCT SUBSTRING(TO_CHAR("DATA", 'YYYY/MM/DD') 1,4)||'_'|...
+                                                             ^
+2017-03-14 12:25:51 ERROR  : ERROR:  syntax error at or near "1"
+LINE 1: ... DISTINCT SUBSTRING(TO_CHAR("DATA", 'YYYY/MM/DD') 1,4)||'_'|...
+                                                             ^
+2017-03-14 12:25:51 ERROR  : ERROR:  syntax error at or near "1"
+LINE 11: ... DISTINCT SUBSTRING(TO_CHAR("DATA", 'YYYY/MM/DD') 1,4)||'_'|...
+                                                              ^
+2017-03-14 12:25:59 ERROR  : ERROR:  function to_char(character varying, unknown) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING(TO_CHAR("DATA", 'YYYY/MM/DD'), 1,4...
+                                  ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 12:26:16 ERROR  : ERROR:  function to_char(character varying, unknown) does not exist
+LINE 1: SELECT DISTINCT SUBSTRING(TO_CHAR(CAST("DATA" AS CHARACTER V...
+                                  ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-14 12:29:01 ERROR  : ERROR:  missing "LOOP" at end of SQL expression
+LINE 17: SELECT RIGHT("DATA", 4) FROM public.base2art LIMIT 100;
+                                                               ^
+2017-03-14 12:29:07 ERROR  : ERROR:  missing "LOOP" at end of SQL expression
+LINE 17: SELECT RIGHT("DATA", 4) FROM public.base2art LIMIT 100;
+                                                               ^
+2017-03-14 12:59:48 ERROR  : ERROR:  relation "DM.DIM_PROJETOS" does not exist
+2017-03-14 13:07:59 ERROR  : ERROR:  "9" is not a valid binary digit
+LINE 2: ...17-03-13', 'Rafael Marvila', 'CARREGAMENTO', '1', '09:00', '...
+                                                             ^
+2017-03-14 13:09:00 ERROR  : ERROR:  column "TABELA FATO" of relation "DIM_PROJETOS" does not exist
+LINE 2: ...TO", "DSC_PROCESSO", "HABILITADO", "HR_EXECUÇÃO", "TABELA FA...
+                                                             ^
+2017-03-14 13:09:13 ERROR  : ERROR:  invalid input syntax for type date: "1"
+LINE 3: VALUES ('1', '2017-03-13', 'Rafael Marvila', 'CARREGAMENTO',...
+                ^
+2017-03-14 13:09:41 ERROR  : ERROR:  INSERT has more target columns than expressions
+LINE 6: ...TO", "DSC_PROCESSO", "HABILITADO", "HR_EXECUÇÃO", "TABELA_FA...
+                                                             ^
+2017-03-14 13:10:11 ERROR  : ERROR:  null value in column "SK_PROJETO" violates not-null constraint
+DETAIL:  Failing row contains (null, 2017-03-13, Rafael Marvila, FAROL CARREGAMENTO ELTON, CARREGAMENTO, 1, 09:00:00, public.consolidadocarregamento).
+2017-03-14 13:44:04 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 10:     WHEN carregados.ods_status AS "STATUS" IS NULL
+                                        ^
+2017-03-14 13:44:20 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 11:     WHEN carregados.ods_status AS "STATUS" IS NULL
+                                        ^
+2017-03-14 13:44:27 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 13:44:51 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 13:45:48 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 13:46:21 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 13:46:33 ERROR  : ERROR:  syntax error at or near "."
+LINE 14:     END AS carregados.ods_status
+                              ^
+2017-03-14 13:46:40 ERROR  : ERROR:  syntax error at or near "."
+LINE 14:     END AS carregados.ods_status
+                              ^
+2017-03-14 13:46:44 ERROR  : ERROR:  cannot change name of view column "STATUS" to "carregados.ods_status"
+2017-03-14 13:46:56 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 13:47:19 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 13:47:40 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 13:47:41 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 13:47:54 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYNG (250)) AS "STAT...
+                        ^
+2017-03-14 13:48:05 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:48:06 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:48:07 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:48:07 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:48:07 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:48:07 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:49:25 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:49:26 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:49:28 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:49:28 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:49:28 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:49:29 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:53:12 ERROR  : ERROR:  syntax error at or near "("
+LINE 13:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 13:54:16 ERROR  : ERROR:  syntax error at or near "("
+LINE 13:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 14:03:05 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 14:04:15 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" AS CHARACTER VARYING (250)) AS "STA...
+                        ^
+2017-03-14 14:04:44 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:07 ERROR  : ERROR:  syntax error at or near "character"
+LINE 13:     ELSE carregados.ods_status character varying (250)
+                                        ^
+2017-03-14 14:05:12 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:19 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:53 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:53 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:54 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:54 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:54 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:55 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:55 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:56 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:57 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:57 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:57 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:57 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:05:58 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:06:08 ERROR  : ERROR:  syntax error at or near ")"
+LINE 11: ... CAST(carregados.ods_status AS CHARACTER VARYING ()) IS NULL
+                                                              ^
+2017-03-14 14:06:11 ERROR  : ERROR:  length for type varchar must be at least 1
+LINE 11:     WHEN CAST(carregados.ods_status AS CHARACTER VARYING (0)...
+                                                ^
+2017-03-14 14:06:44 ERROR  : ERROR:  syntax error at or near ","
+LINE 10: ... CASE CAST(carregados.ods_status AS CHARACTER VARYING (250),
+                                                                       ^
+2017-03-14 14:06:48 ERROR  : ERROR:  syntax error at or near ","
+LINE 10: ...CASE CAST(carregados.ods_status AS CHARACTER VARYING (250)),
+                                                                       ^
+2017-03-14 14:06:58 ERROR  : ERROR:  syntax error at or near ","
+LINE 10: ... CASE CAST(carregados.ods_status AS CHARACTER VARYING (250),
+                                                                       ^
+2017-03-14 14:07:04 ERROR  : ERROR:  syntax error at or near ","
+LINE 10: ... CASE CAST(carregados.ods_status AS CHARACTER VARYING (250),
+                                                                       ^
+2017-03-14 14:07:09 ERROR  : ERROR:  syntax error at or near ","
+LINE 10: ...CASE CAST(carregados.ods_status AS CHARACTER VARYING (250)),
+                                                                       ^
+2017-03-14 14:07:21 ERROR  : ERROR:  syntax error at or near ","
+LINE 10:     CASE carregados.ods_status,
+                                       ^
+2017-03-14 14:07:29 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:07:40 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" CHARACTER VARYING (250)
+                        ^
+2017-03-14 14:07:44 ERROR  : ERROR:  syntax error at or near "("
+LINE 14:     END AS CAST("STATUS" CHARACTER VARYING (250))
+                        ^
+2017-03-14 14:07:47 ERROR  : ERROR:  syntax error at or near ","
+LINE 13:     ELSE carregados.ods_status,
+                                       ^
+2017-03-14 14:07:55 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 15:    FROM "ODS_PROMAX2ART" art
+            ^
+2017-03-14 14:08:04 ERROR  : ERROR:  cannot change name of view column "STATUS" to "ods_status"
+2017-03-14 14:09:46 ERROR  : ERROR:  cannot change name of view column "STATUS" to "ods_status"
+2017-03-14 14:11:38 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to text
+2017-03-14 14:13:24 ERROR  : ERROR:  cannot drop view base2art because other objects depend on it
+DETAIL:  view carregado depends on view base2art
+view previsto depends on view base2art
+view consolidadocarregamento depends on view previsto
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-14 14:13:43 ERROR  : ERROR:  cannot drop view carregado because other objects depend on it
+DETAIL:  view consolidadocarregamento depends on view carregado
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-14 14:13:59 ERROR  : ERROR:  cannot drop view base2art because other objects depend on it
+DETAIL:  view previsto depends on view base2art
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-14 14:14:15 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying(250) to character varying
+2017-03-14 14:14:40 ERROR  : ERROR:  cannot change data type of view column "STATUS" from character varying to text
+2017-03-14 14:57:45 ERROR  : ERROR:  syntax error at or near "reg"
+LINE 3:    FOR reg in 6
+               ^
+2017-03-14 21:06:55 ERROR  : ERROR:  cannot drop view base2art because other objects depend on it
+DETAIL:  view previsto depends on view base2art
+view carregado depends on view base2art
+view consolidadocarregamento depends on view carregado
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-14 21:07:15 ERROR  : ERROR:  cannot drop view previsto because other objects depend on it
+DETAIL:  view consolidadocarregamento depends on view previsto
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-14 21:07:59 ERROR  : ERROR:  cannot drop view previsto because other objects depend on it
+DETAIL:  view consolidadocarregamento depends on view previsto
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-14 21:09:38 ERROR  : ERROR:  cannot drop view base2art because other objects depend on it
+DETAIL:  view carregado depends on view base2art
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-14 21:10:31 ERROR  : ERROR:  view "carregado" does not exist
+2017-03-15 10:26:57 ERROR  : ERROR:  syntax error at or near "farolwms_retornorota"
+LINE 37: farolwms_retornorota."CHAVE"
+         ^
+2017-03-15 10:27:01 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 46: AND "DM"."FTO_FAROLWMS"."DATA" = paletesgerados."CHAVE"
+         ^
+2017-03-15 10:27:03 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 46: AND "DM"."FTO_FAROLWMS"."DATA" = paletesgerados."CHAVE"
+         ^
+2017-03-15 10:27:07 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 138: AND "DM"."FTO_FAROLWMS"."CHAVE" = paletesgerados."CHAVE";
+          ^
+2017-03-15 10:27:09 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 138: AND "DM"."FTO_FAROLWMS"."CHAVE" = paletesgerados."CHAVE";
+          ^
+2017-03-15 11:11:36 ERROR  : ERROR:  relation "TEMP.VALID_FWRETORNOROTA_CLIENTE" does not exist
+LINE 18: FROM "TEMP"."VALID_FWRETORNOROTA_CLIENTE" AS "CLIENTE"
+              ^
+2017-03-15 11:11:37 ERROR  : ERROR:  relation "TEMP.VALID_FWRETORNOROTA_CLIENTE" does not exist
+LINE 18: FROM "TEMP"."VALID_FWRETORNOROTA_CLIENTE" AS "CLIENTE"
+              ^
+2017-03-15 11:19:47 ERROR  : ERROR:  relation "TEMP.VALID_FWRETORNOROTA_CLIENTE" does not exist
+LINE 2: SELECT * FROM "TEMP"."VALID_FWRETORNOROTA_CLIENTE" LIMIT 100...
+                      ^
+2017-03-15 13:03:15 ERROR  : ERROR:  table "VALID_FWRETORNOROTA_ELTON" does not exist
+2017-03-15 13:04:33 ERROR  : ERROR:  operator does not exist: integer <> character varying
+LINE 17: ..." <> "ELTON"."PREVISTO" OR "CLIENTE"."FINALIZADO" <> "ELTON"...
+                                                              ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-15 13:05:09 ERROR  : ERROR:  syntax error at or near ")"
+LINE 14: )
+         ^
+2017-03-15 13:07:02 ERROR  : ERROR:  relation "VALID_FWRETORNOROTA_CLIENTE" already exists
+2017-03-15 13:13:03 ERROR  : ERROR:  relation "checkdoc" does not exist
+LINE 2: FROM (SELECT * FROM CheckDoc) AS CheckDoc
+                            ^
+2017-03-15 13:28:42 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 1: WHERE "ods_mapa" = '92347';
+        ^
+2017-03-15 16:00:24 ERROR  : ERROR:  relation "TEMP.VALID_FWRETORNOROTA_CLIENTE" does not exist
+LINE 2: UPDATE "TEMP"."VALID_FWRETORNOROTA_CLIENTE" SET "DIVERGENTE"...
+               ^
+2017-03-15 16:00:27 ERROR  : ERROR:  relation "TEMP.VALID_FWRETORNOROTA_CLIENTE" does not exist
+LINE 2: UPDATE "TEMP"."VALID_FWRETORNOROTA_CLIENTE" SET "DIVERGENTE"...
+               ^
+2017-03-15 16:00:29 ERROR  : ERROR:  relation "TEMP.VALID_FWRETORNOROTA_CLIENTE" does not exist
+LINE 1: UPDATE "TEMP"."VALID_FWRETORNOROTA_CLIENTE" SET "DIVERGENTE"...
+               ^
+2017-03-15 16:00:49 ERROR  : ERROR:  relation "TEMP.VALID_FWRETORNOROTA_CLIENTE" does not exist
+LINE 1: UPDATE "TEMP"."VALID_FWRETORNOROTA_CLIENTE" SET "DIVERGENTE"...
+               ^
+2017-03-15 16:13:29 ERROR  : ERROR:  operator does not exist: integer ~~ unknown
+LINE 4: AND "PREVISTO" LIKE '%Suz%'
+                       ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-15 16:13:38 ERROR  : ERROR:  operator does not exist: integer ~~ unknown
+LINE 4: AND "PREVISTO" LIKE '%Suz%'
+                       ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-15 16:42:42 ERROR  : ERROR:  syntax error at end of input
+LINE 75: WHERE "SK_TEMPO" BETWEEN 2017021
+                                         ^
+2017-03-15 18:37:00 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-15 18:37:04 ERROR  : could not connect to server: No route to host (0x00002751/10065)
+	Is the server running on host "52.67.2.108" and accepting
+	TCP/IP connections on port 5434?
+2017-03-15 18:37:06 ERROR  : could not connect to server: No route to host (0x00002751/10065)
+	Is the server running on host "52.67.2.108" and accepting
+	TCP/IP connections on port 5434?
+2017-03-15 18:37:07 ERROR  : could not connect to server: No route to host (0x00002751/10065)
+	Is the server running on host "52.67.2.108" and accepting
+	TCP/IP connections on port 5434?
+2017-03-15 18:42:20 ERROR  : ERROR:  syntax error at or near "801936"
+LINE 1: 801936
+        ^
+2017-03-15 20:44:02 ERROR  : ERROR:  relation "paletesgerados" does not exist
+LINE 2: SELECT * FROM PaletesGerados
+                      ^
+2017-03-16 09:20:13 ERROR  : ERROR:  cannot drop the currently open database
+2017-03-16 09:20:21 ERROR  : ERROR:  cannot drop the currently open database
+2017-03-16 09:20:40 ERROR  : ERROR:  database "Carregamento_2" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2017-03-16 09:34:21 ERROR  : ERROR:  syntax error at or near "\"
+LINE 29: \connect "Puxada"
+         ^
+2017-03-16 09:34:47 ERROR  : ERROR:  syntax error at or near "137"
+LINE 1024: 137 CDD-LITORAL
+           ^
+2017-03-16 09:44:44 ERROR  : ERROR:  syntax error at or near "444"
+LINE 1004: 444 CDD-TESTE 
+           ^
+2017-03-16 10:20:47 ERROR  : ERROR:  database "Puxada" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+2017-03-16 10:21:13 ERROR  : ERROR:  syntax error at or near "pg_terminate_backend"
+LINE 1:    pg_terminate_backend(pid) 
+           ^
+2017-03-16 10:21:16 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-16 10:21:17 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-16 10:21:19 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-16 10:21:21 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-16 10:21:25 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-16 10:21:40 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-16 10:21:44 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-16 10:28:02 ERROR  : ERROR:  syntax error at or near "END"
+LINE 21: END;
+         ^
+2017-03-16 10:28:05 ERROR  : ERROR:  syntax error at or near ";"
+LINE 21: END;
+            ^
+2017-03-16 10:28:11 ERROR  : ERROR:  syntax error at or near "ENF"
+LINE 20: ENF IF;
+         ^
+2017-03-16 10:31:01 ERROR  : ERROR:  syntax error at or near ")"
+LINE 17: ..._data."ODS_UNB" = public."ODSWMSFINALIZADOS_CSV"."ODS_UNB");
+                                                                      ^
+2017-03-16 10:39:37 ERROR  : ERROR:  column "MAPA" does not exist
+LINE 3: AND "MAPA" = 51759
+            ^
+HINT:  Perhaps you meant to reference the column "puxadatalhado.DATA".
+2017-03-16 10:39:46 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 3: AND "OP" = 51759
+                 ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-16 13:59:26 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-16 13:59:50 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-03-16 15:02:36 ERROR  : ERROR:  database "RetornoRota" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2017-03-16 15:17:53 ERROR  : ERROR:  syntax error at or near ";"
+LINE 27:   ORDER BY finalizados."DATA" DESC;
+                                           ^
+2017-03-16 15:27:02 ERROR  : ERROR:  syntax error at end of input
+LINE 1: SELECT * FROM 
+                      ^
+2017-03-16 15:27:16 ERROR  : ERROR:  syntax error at or near "FROMpublic"
+LINE 1: SELECT * FROMpublic."FTO_DESCARREGADOS" 
+                 ^
+2017-03-16 15:37:28 ERROR  : ERROR:  syntax error at or near "282812"
+LINE 1: 282812
+        ^
+2017-03-16 15:40:17 ERROR  : ERROR:  syntax error at or near "ESCARREG"
+LINE 1: ESCARREG"
+        ^
+2017-03-16 17:12:22 ERROR  : ERROR:  syntax error at or near "FUNÇÕES"
+LINE 1: FUNÇÕES
+        ^
+2017-03-16 17:34:30 ERROR  : ERROR:  syntax error at or near ";"
+LINE 20: ...IZADOS_CSV"."ODS_ARMAZEM", "ODSWMSFINALIZADOS_CSV"."ODS_OP";
+                                                                       ^
+2017-03-16 17:51:30 ERROR  : ERROR:  syntax error at or near "IF"
+LINE 11: IF (SELECT COUNT(*) FROM public."PREVISTOS_WMS") > 1
+         ^
+2017-03-16 17:51:41 ERROR  : ERROR:  syntax error at or near "IF"
+LINE 9: IF (SELECT COUNT(*) FROM public."PREVISTOS_WMS") > 1
+        ^
+2017-03-16 17:51:47 ERROR  : ERROR:  syntax error at or near ")"
+LINE 17: ..."OP" and base_data."ODS_UNB" = public."PREVISTOS_WMS"."UNB")
+                                                                       ^
+2017-03-16 17:51:50 ERROR  : ERROR:  syntax error at or near "END"
+LINE 19: END IF;
+         ^
+2017-03-16 17:59:50 ERROR  : ERROR:  syntax error at or near "("
+LINE 17: ... CAST(public."ODSWMSFINALIZADOS_CSV"."ODS_UNB" AS (INTEGER);
+                                                              ^
+2017-03-16 18:02:57 ERROR  : ERROR:  column base.DATA does not exist
+LINE 5: AND base."DATA" <> wms_finalizados."ODS_DATA"
+            ^
+2017-03-16 18:14:48 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 2: SELECT * FROM SELECT COUNT(*) FROM public."ODSWMSFINALIZADOS...
+                      ^
+2017-03-16 18:15:34 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 3: WHERE "ODS_OP" = 98269;
+                       ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-17 08:44:13 ERROR  : ERROR:  syntax error at or near "("
+LINE 8: (SELECT "ARMAZEM", "OP", COUNT(*) FROM public.puxadatalhado
+        ^
+2017-03-17 08:46:30 ERROR  : ERROR:  syntax error at or near "IF"
+LINE 4: IF (SELECT "ARMAZEM", "OP", COUNT(*) FROM public.puxadatalha...
+        ^
+2017-03-17 08:46:40 ERROR  : ERROR:  syntax error at or near "IF"
+LINE 16: IF (SELECT COUNT(*) FROM CHECKDOC) > 1
+         ^
+2017-03-17 08:47:16 ERROR  : ERROR:  syntax error at or near ")"
+LINE 11: )
+         ^
+2017-03-17 08:47:23 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 8: IF (SELECT SELECT "ARMAZEM", "OP", COUNT(*) FROM public.puxa...
+                   ^
+2017-03-17 09:01:10 ERROR  : ERROR:  database "RetornoRota_2" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2017-03-17 09:16:14 ERROR  : ERROR:  syntax error at or near ")"
+LINE 9: ...integrados_1."CÓDIGO UNB", nintegrados_1."ARMAZÉM") nintegra...
+                                                             ^
+2017-03-17 09:39:42 ERROR  : ERROR:  database "RetornoRota_" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2017-03-17 09:41:48 ERROR  : FATAL:  database "RetornoRota_" does not exist
+
+2017-03-17 09:49:22 ERROR  : ERROR:  syntax error at or near "1"
+LINE 40:   SELECT * FROM CHECKDOC 1;
+                                  ^
+2017-03-17 09:49:50 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 44:   WHERE "STATUS" = 'NÃO INTEGRADO';
+           ^
+2017-03-17 09:50:08 ERROR  : ERROR:  syntax error at or near "THEN"
+LINE 13: THEN
+         ^
+2017-03-17 09:52:24 ERROR  : ERROR:  syntax error at or near "THEN"
+LINE 13: THEN
+         ^
+2017-03-17 10:00:16 ERROR  : ERROR:  syntax error at or near ";"
+LINE 5:   GROUP BY "DATA", "CÓDIGO UNB", "ARMAZÉM";
+                                                  ^
+2017-03-17 10:00:47 ERROR  : ERROR:  relation "check2" does not exist
+LINE 3: ...ZADOS", COUNT ("STATUS") * 10 AS "PREVISTOS" FROM CHECK2 AS ...
+                                                             ^
+2017-03-17 10:57:46 ERROR  : ERROR:  column "puxadatalhado.DATA" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT "DATA","ARMAZEM", "OP", COUNT(*) FROM public.puxadata...
+               ^
+2017-03-17 11:00:48 ERROR  : ERROR:  syntax error at or near "ASEDATA"
+LINE 1: ASEDATA"
+        ^
+2017-03-17 11:08:26 ERROR  : ERROR:  syntax error at or near "talhado"
+LINE 1: talhado
+        ^
+2017-03-17 11:13:24 ERROR  : ERROR:  syntax error at or near ""ODS_OP""
+LINE 3: WHEER "ODS_OP" = '51759';
+              ^
+2017-03-17 11:13:51 ERROR  : ERROR:  syntax error at or near ""OP""
+LINE 3: WEHRE "OP" = '51759';
+              ^
+2017-03-17 11:16:59 ERROR  : ERROR:  syntax error at or near ")"
+LINE 3: HAVING COUNT (*) > 1)
+                            ^
+2017-03-17 11:26:11 ERROR  : ERROR:  relation "public.puxadatalhado" does not exist
+LINE 1: SELECT "ARMAZEM", "OP", COUNT(*) FROM public.puxadatalhado
+                                              ^
+2017-03-17 11:26:18 ERROR  : ERROR:  relation "public.puxadatalhado" does not exist
+LINE 1: SELECT "ARMAZEM", "OP", COUNT(*) FROM public.puxadatalhado
+                                              ^
+2017-03-17 11:26:26 ERROR  : ERROR:  relation "public.puxadatalhado" does not exist
+LINE 1: SELECT "ARMAZEM", "OP", COUNT(*) FROM public.puxadatalhado
+                                              ^
+2017-03-17 11:26:44 ERROR  : ERROR:  relation "previstoconsolidado" does not exist
+LINE 12:    FROM previstoconsolidado previsto
+                 ^
+2017-03-17 11:26:56 ERROR  : ERROR:  syntax error at or near "ELECT"
+LINE 1: ELECT "ARMAZEM", "OP", COUNT(*) FROM public.puxadatalhado
+        ^
+2017-03-17 11:34:35 ERROR  : ERROR:  column "OP" does not exist
+LINE 3: WHERE "OP" = '14344';
+              ^
+2017-03-17 11:36:39 ERROR  : ERROR:  syntax error at or near ";"
+LINE 20: ...IZADOS_CSV"."ODS_ARMAZEM", "ODSWMSFINALIZADOS_CSV"."ODS_OP";
+                                                                       ^
+2017-03-17 11:37:00 ERROR  : ERROR:  relation "checkdock" does not exist
+LINE 25: SELECT * FROM CHECKDOCK LIMIT 10;
+                       ^
+2017-03-17 11:39:25 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 25: WHERE "ODS_OP" = '14344';
+         ^
+2017-03-17 11:42:48 ERROR  : ERROR:  missing FROM-clause entry for table "checkdoc"
+LINE 14:        WHERE "ODS_UNB" = CHECKDOC."UNB" AND "ODS_OP" = CHECK...
+                                  ^
+2017-03-17 11:43:03 ERROR  : ERROR:  invalid reference to FROM-clause entry for table "previstoconsolidado"
+LINE 14:        WHERE "ODS_UNB" = previstoconsolidado."UNB" AND "ODS_...
+                                  ^
+HINT:  Perhaps you meant to reference the table alias "previsto".
+2017-03-17 11:43:37 ERROR  : ERROR:  syntax error at or near ";"
+LINE 19:        );
+                 ^
+2017-03-17 11:56:42 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 11:   WHERE "ODS_DATA" = '16/03/2016' AND "ODS_ARMAZEM" LIKE '%P...
+           ^
+2017-03-17 12:00:13 ERROR  : ERROR:  syntax error at or near "ALTER"
+LINE 13: ALTER TABLE public.realizado
+         ^
+2017-03-17 12:58:17 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: SELECT * FROM "LOG"."LOG_BIWMS" LIMIT;
+                                             ^
+2017-03-17 13:12:37 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 3: WHERE "DATA" > '10/03/2017'
+        ^
+2017-03-17 13:24:56 ERROR  : ERROR:  column "replace" does not exist
+LINE 2: SELECT REPLACE, MIN("ODS_DATA"), MAX("ODS_DATA") FROM public...
+               ^
+2017-03-17 13:25:13 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 2: ...LACE("ODS_DATA", MIN("ODS_DATA"), MAX("ODS_DATA") FROM publi...
+                                                             ^
+2017-03-17 13:25:18 ERROR  : ERROR:  column "realizadoconsolidado.ODS_DATA" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 2: SELECT REPLACE("ODS_DATA", MIN("ODS_DATA"), MAX("ODS_DATA"))...
+                       ^
+2017-03-17 13:34:01 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 8:   WHERE "ODS_OP" = '14333';
+          ^
+2017-03-17 13:34:09 ERROR  : ERROR:  syntax error at or near "GROUP"
+LINE 8:   GROUP BY "ODSWMSFINALIZADOS_CSV"."ODS_DATA", "ODSWMSFINALI...
+          ^
+2017-03-17 13:38:36 ERROR  : ERROR:  column "ODSWMSFINALIZADOS_CSV.ODS_OP" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 5: ...CT CAST("ODS_DATA" AS DATE) AS "DATA", "ODS_UNB", "ODS_OP" F...
+                                                             ^
+2017-03-17 13:44:14 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 11: SELECT MIN("DATA") AS "DATA", "ODS_OP", "ODS_UNB" FROM CHECK...
+         ^
+2017-03-17 13:47:58 ERROR  : ERROR:  function replace(date, unknown, unknown) does not exist
+LINE 11: SELECT REPLACE(MIN("DATA"), '-', '/') AS "DATA", "ODS_OP", "...
+                ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-17 13:50:03 ERROR  : ERROR:  column "/" does not exist
+LINE 6: SELECT SUBSTRING("ODS_DATA",1,2) + "/" + SUBSTRING("ODS_DATA...
+                                           ^
+2017-03-17 13:50:12 ERROR  : ERROR:  operator does not exist: text + unknown
+LINE 5: SELECT SUBSTRING("ODS_DATA",1,2) + '/' + SUBSTRING("ODS_DATA...
+                                         ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-03-17 13:50:45 ERROR  : ERROR:  invalid input syntax for type date: "20/17/-03-"
+2017-03-17 13:50:53 ERROR  : ERROR:  invalid input syntax for type date: "20/17/-03-"
+2017-03-17 13:51:53 ERROR  : ERROR:  column "dockcheck.DATA" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 10: SELECT CAST("DATA" AS DATE) AS "DATA", "ODS_OP", "ODS_UNB" F...
+                     ^
+2017-03-17 13:55:19 ERROR  : ERROR:  column "/" does not exist
+LINE 1: SELECT SUBSTRING("ODS_DATA",1,2) + "/" + SUBSTRING("ODS_DATA...
+                                           ^
+2017-03-17 13:56:43 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 2: ..."ODS_DATA",5,4)) AS "DATA"*/, "ODS_UNB", "ODS_OP" FROM publi...
+                                                             ^
+2017-03-17 13:58:58 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 4: FROM public."ODSWMSFINALIZADOS_CSV"
+        ^
+2017-03-17 14:03:41 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 18: SELECT CAST(MIN("DATA" AS DATE)) AS "DATA", "ODS_OP", "ODS_U...
+                                ^
+2017-03-17 14:04:05 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 19: SELECT CAST(MIN("DATA" AS DATE)) AS "DATA", "ODS_OP", "ODS_U...
+                                ^
+2017-03-17 14:06:27 ERROR  : ERROR:  invalid input syntax for type date: "17//2/08/0"
+2017-03-17 14:06:32 ERROR  : ERROR:  invalid input syntax for type date: "17//2/08/0"
+2017-03-17 14:09:30 ERROR  : ERROR:  function pg_catalog.substring(date, integer, integer) does not exist
+LINE 9: SELECT SUBSTRING("ODS_DATA", 1, 4) FROM CHECKDOC
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-03-17 14:11:16 ERROR  : ERROR:  syntax error at or near "WITH"
+LINE 11: WITH CHECKDOC
+         ^
+2017-03-17 14:13:04 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 2: SELECT CONVERT("DATA" AS DATE) FROM public.puxadatalhado
+                              ^
+2017-03-17 14:13:13 ERROR  : ERROR:  syntax error at or near "AS"
+LINE 2: SELECT CONVERT("DATA" AS DATE) "AS" FROM public.puxadatalhad...
+                              ^
+2017-03-17 14:15:23 ERROR  : ERROR:  cannot change data type of view column "DATA" from character varying(250) to date
+2017-03-17 14:40:58 ERROR  : ERROR:  cannot drop view realizadoconsolidado because other objects depend on it
+DETAIL:  view consolidado depends on view realizadoconsolidado
+view puxadatalhado depends on view realizadoconsolidado
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-17 14:41:28 ERROR  : ERROR:  cannot drop view realizadoconsolidado because other objects depend on it
+DETAIL:  view consolidado depends on view realizadoconsolidado
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-17 14:43:24 ERROR  : ERROR:  cannot drop view realizadoconsolidado because other objects depend on it
+DETAIL:  view puxadatalhado depends on view realizadoconsolidado
+view consolidado depends on view realizadoconsolidado
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-17 14:43:58 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:44:04 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:44:13 ERROR  : ERROR:  cannot change data type of view column "DATE" from date to character varying(250)
+2017-03-17 14:44:41 ERROR  : ERROR:  cannot drop view realizadoconsolidado because other objects depend on it
+DETAIL:  view puxadatalhado depends on view realizadoconsolidado
+view consolidado depends on view realizadoconsolidado
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-03-17 14:44:52 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:44:53 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:44:54 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:44:54 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:44:54 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:44:54 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:44:54 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:45:00 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:45:14 ERROR  : ERROR:  cannot change name of view column "DATE" to "ODS_DATA"
+2017-03-17 14:46:52 ERROR  : ERROR:  cannot change data type of view column "DATA" from character varying(250) to date
+2017-03-17 15:25:33 ERROR  : ERROR:  syntax error at or near "."
+LINE 18:     myaggregate."UNB",
+                        ^
+2017-03-17 15:25:38 ERROR  : ERROR:  missing FROM-clause entry for table "myagrgregate"
+LINE 17:     myagrgregate."DATA",
+             ^
+2017-03-17 15:26:06 ERROR  : ERROR:  column "DATA" does not exist
+LINE 10: SELECT MIN("DATA") AS "DATA", "ODS_OP", "ODS_UNB" FROM CHECK...
+                    ^
+2017-03-17 16:19:50 ERROR  : ERROR:  syntax error at or near "'SIM'"
+LINE 39: ...."VALID_FWRETORNOROTA_CLIENTE" SET "DIVERGENTE" = NULL 'SIM'
+                                                                   ^
+2017-03-17 16:32:52 ERROR  : ERROR:  relation "paletesgerados_2" does not exist
+LINE 2: FROM (SELECT * FROM PaletesGerados_2) AS paletesgerados
+                            ^
+2017-03-17 16:33:19 ERROR  : ERROR:  syntax error at or near "0"
+LINE 8: AND "DM"."FTO_FAROLWMS"."RETORNOROTA_QNTTOTAL" 0;
+                                                       ^
+2017-03-17 16:35:38 ERROR  : ERROR:  syntax error at or near "SET"
+LINE 7: AND "DM"."FTO_FAROLWMS" SET "RETORNOROTA_QNTDESCARREGADOS" =...
+                                ^
+2017-03-17 16:43:09 ERROR  : ERROR:  argument of AND must be type boolean, not type integer
+LINE 2: ...E "DM"."FTO_FAROLWMS" SET "RETORNOROTA_QNTDESCARREGADOS" = 0
+                                                                      ^
+2017-03-17 16:45:52 ERROR  : ERROR:  syntax error at or near "'SIM'"
+LINE 22: ...."VALID_FWRETORNOROTA_CLIENTE" SET "DIVERGENTE" = NULL 'SIM'
+                                                                   ^
+2017-03-17 16:55:42 ERROR  : ERROR:  syntax error at or near "92567"
+LINE 1: 92567
+        ^
+2017-03-17 17:29:50 ERROR  : ERROR:  column "SKTEMPO" does not exist
+LINE 3: WHERE "SKTEMPO" = '20170214';
+              ^
+HINT:  Perhaps you meant to reference the column "FTO_RET_ROTA_DESCARREG.SK_TEMPO".
+2017-03-17 17:44:09 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 8: SELECT * FROM public."ODS_BASEARMAZEM"
+        ^
+2017-03-17 17:44:12 ERROR  : ERROR:  relation "public.retornorota" does not exist
+LINE 4: SELECT CAST("DATA" AS DATE) AS "DATA" FROM public.retornorot...
+                                                   ^
+2017-03-17 17:45:22 ERROR  : ERROR:  syntax error at or near ")"
+LINE 5: SELECT CAST("SK_TEMPO") AS "DATE" FROM "DM"."FTO_RET_ROTA_DE...
+                              ^
+2017-03-17 17:45:32 ERROR  : ERROR:  cannot cast type integer to date
+LINE 5: SELECT CAST("SK_TEMPO" AS DATE) AS "DATE" FROM "DM"."FTO_RET...
+               ^
+2017-03-17 17:46:18 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 3: WHERE "SK_TEMPO" = '20170302';
+        ^
+2017-03-18 08:27:40 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
